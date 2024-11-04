@@ -1,6 +1,20 @@
 # **CloudCast**
 
-CloudCast is a weather forecasting web application that provides real-time weather information for various cities. The app features a dynamic interface, allowing users to search for city-specific weather and view detailed forecasts including temperature, humidity, and wind speed, along with hourly and 5-day forecasts.
+CloudCast is a weather forecasting web application that provides real-time weather information for various cities.
+
+
+![homepage](https://github.com/user-attachments/assets/33dbd3a7-1aa8-4ac1-857b-e3c85710a706)
+
+
+
+
+The app features a dynamic interface, allowing users to search for city-specific weather and view detailed forecasts including temperature, humidity, air quality, along with hourly and 5-day forecasts and a dynamic real-time heat map.
+
+
+
+![weatherinfo1](https://github.com/user-attachments/assets/1ce7d865-7cdb-4337-9ef5-fe32f1955f60)
+![Forecast](https://github.com/user-attachments/assets/8ef6fe3c-b338-4ad8-b2b9-1410dc47f83a)
+![heatmap](https://github.com/user-attachments/assets/6cdd6db2-d2e6-4b92-9dcc-99a2a1dd00dc)
 
 
 ## Features
