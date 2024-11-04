@@ -1,0 +1,243 @@
+
+.city-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.city-weather.show {
+  opacity: 1; /* Fade-in effect */
+  transform: translateY(0); /* Move to final position */
+}
+
+/* Main Weather Card */
+.main-weather-card {
+  display: grid;
+  align-items: center;
+  background-color: #f4f4f4;
+  background-image: url('/images/wc_bg_image.webp');
+  background-blend-mode: soft-light;
+  border: 2px solid;
+  border-color:#137054;
+  border-right-width: 8px;
+  border-bottom-width: 6px;
+  border-radius: 1rem;
+  padding: 24px;
+  width: 100%;
+  max-width: 700px;
+  margin: 10px auto;
+  box-shadow: 0 2px 6px #909090;
+  text-align: left;
+  transition: 0.3s;
+  }
+
+
+.main-weather-card img {
+  position: flex;
+  width: 100px;
+  height: 100px;
+  margin-right: 60px;
+}
+
+.main-weather-card h2 {
+  font-family: 'Playfair', serif;
+  color: #137054;
+  font-weight: 400;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.main-weather-card p {
+  font-size: 18px;
+  color: #4b5563;
+  margin-top: 4px;
+}
+
+.main-weather-card h3 {
+  color:#d81334;
+  display:flex;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Rain and Air Quality Cards */
+.detail-cards-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px;
+  gap: 50px;
+}
+
+.detail-card {
+  flex: 1;
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color:#54a7a2;
+  border-right-width: 8px;
+  border-bottom-width: 6px;
+  border-radius: 1rem;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.detail-card h4 {
+  color:#54a7a2;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.detail-card p {
+  color:#54a7a2;
+  font-size: 18px;
+}
+
+/* Forecast Card */
+.forecast-card {
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color:#d81334;
+  border-right-width: 8px;
+  border-bottom-width: 6px;
+  border-radius: 1rem;
+  padding: 24px;
+  width: 100%;
+  max-width: 700px;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.forecast-card h4 {
+  color:#d81334;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.forecast-details {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+.day-card {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 10px;
+  min-width: 100px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.day-card img {
+  width: 40px;
+  height: 40px;
+  margin: 8px auto;
+}
+
+.day-card p {
+  font-size: 14px;
+}
+
+/* Map Card */
+.map-card {
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color:#137054;
+  border-right-width: 8px;
+  border-bottom-width: 6px;
+  border-radius: 1rem;
+  padding: 24px;
+  width: 100%;
+  max-width: 700px;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  transition: 0.3s;
+}
+
+.map-card h4 {
+  font-size: 22px;
+  color:#137054;
+  font-weight:700;
+}
+
+.map-card iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Hourly Forecast Card */
+.hourly-forecast-card {
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color:#fe7383;
+  border-right-width: 8px;
+  border-bottom-width: 6px;
+  border-radius: 1rem;
+  padding: 24px;
+  width: 100%;
+  max-width: 700px;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.hourly-forecast-card h4 {
+  color:#fe7383;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hourly-forecast-details {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+.hour-card {
+  background-color: #ffffff;
+  border-right-width: 5px;
+  border-color:#fe7383;
+  padding: 20px;
+  min-width: 80px;
+  text-align: center;
+}
+
+
+.hour-card img {
+  width: 40px;
+  height: 40px;
+  margin: 8px auto;
+}
+
+.hour-card p {
+  color:#4b5563;
+  font-size: 14px;
+}
+
+/* Hover effect for all cards */
+
+.main-weather-card:hover, .weather-card:hover, .detail-card:hover, .rain-chart-card:hover, .hourly-forecast-card:hover, .forecast-card:hover, .map-card:hover {
+  transform: scale(1.05);
+}
+

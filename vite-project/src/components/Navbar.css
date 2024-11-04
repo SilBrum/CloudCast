@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: transparent;
+    font-family: "Playfair", sans-serif;
+    width: 100%;
+    height: 60px;
+    z-index: 1001;
+  }
+
+  .navbar .logo {
+    font-family: 'Playfair', serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #137054;
+    padding: 15px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    padding:15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #137054;
+    padding: 10px;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .nav-links a:hover {
+    color: #d81334;
+  }
+
+  

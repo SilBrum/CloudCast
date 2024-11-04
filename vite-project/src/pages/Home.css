@@ -1,0 +1,175 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home {
+  display: flex;
+  font-family: 'Quicksand', sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.header {
+  position: relative;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.header_image {
+  background-image: url('/images/background_cc.png');
+  position: absolute;
+  top: 40%;
+  right: 0;
+  padding-right: 100px;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.home h1 {
+  font-family: "Playfair", serif;
+  font-weight: 200;
+  margin-left: 1rem;
+  color: #54a7a2;
+  font-size: 72px;
+  z-index: 2;
+  position: relative;
+}
+.home h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  color:#137054;
+
+}
+
+.home h4 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  color:#696969;
+  margin-left: 1rem;
+  padding-bottom: 15px;
+}
+
+.highlight {
+  color: #137054;
+  font-weight: 700;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-left: 1rem;
+}
+
+.city-cards {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 8px;
+  text-align: center;
+  color: #137054;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  overflow-x: auto;
+  padding-top: 10px;
+  background-color: #e5e0e1;
+}
+
+.city-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.city-cards .weather-card {
+  flex: 0 0 auto;
+}
+
+.home.hide {
+  opacity: 0;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 0.5px solid #ccc;
+  border-radius: 20px;
+}
+
+.search-bar button {
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #fe7383;
+  color: #faefed;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.search-bar button:hover {
+  background-color: #d81334;
+  color: #e1eafc;
+}
+
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .header_image {
+    position: static;
+    width: 100%;
+    height: 200px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: stretch;
+  }
+
+  .search-bar input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .city-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .city-cards .weather-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 36px;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+  }
+
+  .search-bar button {
+    font-size: 14px;
+  }
+}
+

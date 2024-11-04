@@ -1,0 +1,22 @@
+.footer {
+    background-color: #fe7383;
+    color: #ccc;
+    padding-top: 50px;
+    width: 100%;
+
+  }
+  
+  .footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #fff;
+  }
+  
+  .social-icons i {
+    font-size: 1.5rem;
+  }
+  
